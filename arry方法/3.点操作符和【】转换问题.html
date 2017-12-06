@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box1{
+				width: 200px;
+				height: 250px;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1"></div>
+		<script type="text/javascript">
+			//getComputedStyle(obj)['width'];
+			//var oBox=document.getElementById('box');
+			//alert(getComputedStyle(oBox)['width']);//200px
+			//alert(getComputedStyle(oBox).height);//250px
+			
+			/*function getstyle(obj,attr){//obj:元素对象    attr:属性(attribute);
+				return getComputedStyle(obj)[attr];//中括号不能改成点操作符
+			}
+			
+			var oBox1=document.getElementById('box1');
+			
+			alert(getstyle(oBox1,'backgroundColor'));*///css里面所有的-操作符改成首字母大写的形式background-color==>backgroundColor
+			
+			//var oBox1=document.getElementById('box1');
+			//oBox1.style.background='blue';//设置颜色
+			//oBox1['style']['background']='cyan';
+		</script>
+	</body>
+</html>

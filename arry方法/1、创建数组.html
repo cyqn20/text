@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//1.数组的创建方式(二种方式：构造函数创建，字面量的创建--json)
+			//构造函数的特点:a.首字母大写(区分构造函数和普通函数)  b.new运算符调用
+			//构造函数的功能：构造实例对象，实例对象可以用构造函数下面的属性和方法。
+			//var arr=new Array(5);//arr对象(实例对象)。数组项放置在圆括号里面的，可以是任意的类型，如果括号里面仅仅放了一个数字，代表的不是数组项，而是数组的长度。
+			//alert(arr.length);//数组的长度
+			
+			
+			/*var arr1=new Array(5,6);
+			alert(arr1.length);*/
+			//alert(Array);//function Array() { [native code] }
+			
+			//字面量创建数组(简写)
+			//var arr2=[5,'hello',function(){alert('hi')},true,null,undefined];//任意类型。
+			//alert(arr2);//数组的名称等于数组本身的所有的数组项。
+			
+			
+			
+			
+			//2.数组的操作（下标、length、遍历、检测数组）
+			//数组的下标是固定的，从0开始
+			//var arr3=['apple','orange','banana'];
+			//alert(arr3[2]);//banana
+			//alert(arr3[10]);//undefined
+			
+			//length属性：可读写(获取和设置)
+			//var arr4=[1,2,3,4,5,6,7,8,9];
+			//alert(arr4.length);//9
+			//arr4.length=4;//截取
+			//arr4.length=100;//扩展
+			//alert(arr4);
+			//arr4[90]='hello';//扩展
+			//alert(arr4.length);//91
+			
+			//数组的遍历for循环
+			//var arr5=['apple','orange','banana','pear','add'];
+			/*for(var i=0;i<arr5.length;i++){
+				alert(arr5[i]);
+			}*/
+			
+			
+			/*for(var i in arr5){//i:数组的下标  arr5：遍历的数组
+				alert(i);
+				alert(arr5[i]);
+			}*/
+			
+			
+			
+			//检测数组：Array.isArray(arr);返回布尔值
+			//var arr6=['apple','orange','banana','pear','add'];
+			//var num=123;
+			//alert(typeof arr6);//object
+			//alert(Array.isArray(arr6));//true
+			//alert(Array.isArray(num));//false
+			var arr5=['apple','orange','banana','pear','add'];
+			alert(arr5.length);
+			
+		</script>
+	</body>
+</html>
